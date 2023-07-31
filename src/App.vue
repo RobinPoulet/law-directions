@@ -1,23 +1,18 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <div class="text-center m-4 p-2 d-flex justify-content-center align-items-center">
+    <a href="https://www.village-justice.com/articles/" target="_blank">
+      <img
+        src="./assets/logo_Robin.jpg"
+        class="logo-village"
+        alt="logo village de la justice"
+      />
+    </a>
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
